@@ -16,9 +16,9 @@ const cors = require("cors");
 //     console.log(error)
 // });
 
-app.get("/test" , (req , res => {
+app.get("/test" , (req , res) => {
     res.send("test1")
-}));
+});
 
 app.get("/:id" , (req , res) => {
     res.send(req.params.id);
